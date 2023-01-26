@@ -1,0 +1,53 @@
+.firstNavbarContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #2d2d2d;
+    color: #eeeeee;
+}
+.firstNavbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1366px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.secondNavbarContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #666666;
+    color: #eeeeee;
+}
+.secondNavbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1366px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.thirdNavbarContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+    color: #eeeeee;
+}
+.thirdNavbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1366px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+}
