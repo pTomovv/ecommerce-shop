@@ -1,0 +1,69 @@
+.firstFooterRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid #eee;
+    gap: 50px;
+}
+
+.secondFooterRowContainer {
+    display: flex;
+    justify-content: center;
+    background-color: #eee;
+    width: 100%;
+    height: 242px;
+    color: #666666;
+}
+
+.secondFooterRow {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1366px;
+    height: 100%;
+    gap: 18px;
+    padding: 32px 32px 0 32px;
+}
+.firstListItem{
+    font-size: .875rem;
+    font-family: futura-pt,sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+.secondFooterRow li:hover{
+    color: #3860be;
+    cursor: pointer;
+}
+.thirdFooterRowContainer{
+    display: flex;
+    justify-content: center;
+    background-color: #ddd;
+    width: 100%;
+    height: 50px;
+    color: #666;
+}
+.thirdFooterRow{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1366px;
+    height: 100%;
+    font-size: .75rem;
+    padding: 0 32px;
+}
+.footerSmallContainer{
+    display: flex;
+    gap: 7px;
+}
+.footerSmallContainer a:hover{
+    color: #3860be;
+    cursor: pointer;
+}
+.footerSmallContainer p:hover{
+    cursor:default;
+}
