@@ -67,3 +67,7 @@
 .footerSmallContainer p:hover{
     cursor:default;
 }
+.footerSocials{
+    display: flex;
+    gap: 55px;
+}

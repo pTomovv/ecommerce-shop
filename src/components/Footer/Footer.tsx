@@ -1,3 +1,6 @@
+import FacebookIcon from "public/common/icons/FacebookIcon";
+import InstagramIcon from "public/common/icons/InstagramIcon";
+import SnapchatIcon from "public/common/icons/SnapchatIcon";
 import styles from "./Footer.module.css"
 
 const Footer = () => {
@@ -6,8 +9,11 @@ const Footer = () => {
             <div className={styles.firstFooterRow}>
 
                 <div className={styles.footerSocials}>
-                    socials
+                    <FacebookIcon />
+                    <InstagramIcon />
+                    <SnapchatIcon />
                 </div>
+                |
                 <div className={styles.footerPayment}>
                     payment
                 </div>
