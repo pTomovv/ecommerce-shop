@@ -1,0 +1,46 @@
+.secondNavbarContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #666666;
+    color: #eeeeee;
+    position: relative;
+}
+
+.dropMenu {
+    display: block;
+    position: absolute;
+    top: 50px;
+    background-color: #eeeeee;
+    max-width: 1366px;
+    padding: 0 32px;
+    height: 200px;
+    z-index: 2;
+    color: #000000;
+}
+
+.dropMenuHidden {
+    display: none;
+}
+
+.secondNavbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1366px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.navbarButton {
+    letter-spacing: .8px;
+    padding: 0 10px;
+    height: 100%;
+}
+
+.navbarButton:hover {
+    background-color: #eeeeee;
+    color: #666666;
+}

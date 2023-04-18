@@ -4,6 +4,7 @@ import ProfileIcon from "public/common/icons/Profile";
 import SearchButton from "public/common/icons/SearchButton";
 import ShoppingCart from "public/common/icons/ShoppingCart";
 import styles from "./Navbar.module.css"
+import SecondNavbarContainer from "../SecondNavbarContainer/SecondNavbarContainer";
 
 const Navbar = () => {
     return (
@@ -20,7 +21,7 @@ const Navbar = () => {
                         MEN
                     </div>
                     <div className={styles.searchbarContainer}>
-                        <input type="text" className={styles.searchbar} placeholder="Search for items and brands"/>
+                        <input type="text" className={styles.searchbar} placeholder="Search for items and brands" />
                         <button className={styles.searchButton}>
                             <SearchButton />
                         </button>
@@ -36,17 +37,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <div className={styles.secondNavbarContainer}>
-                <div className={styles.secondNavbar}>
-                    <span>category</span>
-                    <span>category</span>
-                    <span>category</span>
-                    <span>category</span>
-                    <span>category</span>
-                    <span>category</span>
-                    <span>category</span>
-                </div>
-            </div>
+            <SecondNavbarContainer />
             <div className={styles.thirdNavbarContainer}>
                 <div className={styles.thirdNavbar}>
                     <span>women</span>
@@ -57,5 +48,5 @@ const Navbar = () => {
         </>
     );
 }
- 
+
 export default Navbar;
