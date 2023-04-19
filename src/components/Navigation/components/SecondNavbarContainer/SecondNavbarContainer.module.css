@@ -15,7 +15,7 @@
     background-color: #eeeeee;
     max-width: 1366px;
     padding: 0 32px;
-    height: 200px;
+    /* height: 200px; */
     z-index: 2;
     color: #000000;
 }

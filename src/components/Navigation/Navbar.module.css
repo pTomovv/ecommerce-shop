@@ -19,6 +19,7 @@
 
 .navbarLogo {
     padding-right: 10px;
+    cursor: pointer;
 }
 
 .womenOrMenCategory {
@@ -56,24 +57,14 @@
     right: 20px;
     top: 7px;
     z-index: 1;
+    cursor: default;
 }
 
-.profile {
+.profile, .liked, .cart {
     width: 25px;
     height: 25px;
     margin-left: 20px;
-}
-
-.liked {
-    width: 25px;
-    height: 25px;
-    margin-left: 20px;
-}
-
-.cart {
-    width: 25px;
-    height: 25px;
-    margin-left: 20px;
+    cursor: pointer;
 }
 
 .thirdNavbarContainer {
