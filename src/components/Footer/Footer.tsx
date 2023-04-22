@@ -53,6 +53,7 @@ const Footer = () => {
                             <a>Corporate Responsibility</a>
                         </li>
                         <li>
+                            {/* eslint-disable-next-line react/no-unescaped-entities */}
                             <a>Investor's site</a>
                         </li>
                     </ul>

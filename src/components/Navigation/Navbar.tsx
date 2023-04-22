@@ -1,16 +1,16 @@
-import Liked from "src/components/common/icons/Liked";
-import Logo from "src/components/common/icons/Logo";
-import ProfileIcon from "src/components/common/icons/ProfileIcon";
-import SearchButton from "src/components/common/icons/SearchButton";
-import ShoppingCart from "src/components/common/icons/ShoppingCart";
-import styles from "./Navbar.module.css"
-import SecondNavbarContainer from "./components/SecondNavbarContainer/SecondNavbarContainer";
-import { useState } from "react";
+import Liked from 'src/components/common/icons/Liked'
+import Logo from 'src/components/common/icons/Logo'
+import ProfileIcon from 'src/components/common/icons/ProfileIcon'
+import SearchButton from 'src/components/common/icons/SearchButton'
+import ShoppingCart from 'src/components/common/icons/ShoppingCart'
+import styles from './Navbar.module.css'
+import SecondNavbarContainer from './components/SecondNavbarContainer/SecondNavbarContainer'
+import { useState } from 'react'
 
 const Navbar = () => {
-    const [isMen, setIsMen] = useState("men");
-    function selectMenOrWomen(value: string){
-        setIsMen(value);
+    const [isMen, setIsMen] = useState('men')
+    function selectMenOrWomen(value: string) {
+        setIsMen(value)
     }
 
     return (
@@ -20,14 +20,24 @@ const Navbar = () => {
                     <div className={styles.navbarLogo}>
                         <Logo />
                     </div>
-                    <div onClick={() => selectMenOrWomen("women")} className={styles.womenOrMenCategory}>
+                    <div
+                        onClick={() => selectMenOrWomen('women')}
+                        className={styles.womenOrMenCategory}
+                    >
                         WOMEN
                     </div>
-                    <div onClick={() => selectMenOrWomen("men")} className={styles.womenOrMenCategory}>
+                    <div
+                        onClick={() => selectMenOrWomen('men')}
+                        className={styles.womenOrMenCategory}
+                    >
                         MEN
                     </div>
                     <div className={styles.searchbarContainer}>
-                        <input type="text" className={styles.searchbar} placeholder="Search for items and brands" />
+                        <input
+                            type="text"
+                            className={styles.searchbar}
+                            placeholder="Search for items and brands"
+                        />
                         <button className={styles.searchButton}>
                             <SearchButton />
                         </button>
@@ -43,7 +53,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <SecondNavbarContainer isMen={isMen}/>
+            <SecondNavbarContainer isMen={isMen} />
             {/* <div className={styles.thirdNavbarContainer}>
                 <div className={styles.thirdNavbar}>
                     <span>women</span>
@@ -52,7 +62,7 @@ const Navbar = () => {
                 </div>
             </div> */}
         </>
-    );
+    )
 }
 
-export default Navbar;
+export default Navbar
