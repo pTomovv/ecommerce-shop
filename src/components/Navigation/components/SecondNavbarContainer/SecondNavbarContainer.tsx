@@ -41,12 +41,27 @@ const SecondNavbarContainer = ({ isMen }: Props) => {
                 onMouseLeave={hideMenu}
                 className={active ? styles.dropMenu : styles.dropMenuHidden}
             >
-                {menuData
-                    .find((el) => el.key === isMen)
-                    ?.subCategories.find((el) => el.key === subCategory)
-                    ?.items.map((el) => (
-                        <div key={el.key}>{el.itemName}</div>
-                    ))}
+                <div className={styles.subMenuContainers}>
+                    {menuData
+                        .find((el) => el.key === isMen)
+                        ?.subCategories.find((el) => el.key === subCategory)
+                        ?.items.filter((el) => el.bold === true)
+                        .map((el) => (
+                            <a className={styles.subMenuItems} key={el.key}>
+                                {el.itemName}
+                            </a>
+                        ))}
+                    {menuData
+                        .find((el) => el.key === isMen)
+                        ?.subCategories.find((el) => el.key === subCategory)
+                        ?.items.map((el) => (
+                            <a className={styles.subMenuItems} key={el.key}>
+                                {el.itemName}
+                            </a>
+                        ))}
+                </div>
+                <div className={styles.subMenuContainersM}></div>
+                <div className={styles.subMenuContainers}></div>
             </div>
         </div>
     )

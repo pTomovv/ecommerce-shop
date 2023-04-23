@@ -1,5 +1,5 @@
 // type ItemProps = {
-//     itemName: string,
+//     itemName: string
 //     key: string
 // }
 
@@ -15,10 +15,36 @@ type MenuDataProps = {
     subCategories: {
         subCategoryName: string
         key: string
-        items: {
-            itemName: string
-            key: string
-        }[]
+        firstList: [
+            {
+                listHeading: string
+                key: string
+            },
+            {
+                itemName: string
+                key: string
+            }[]
+        ]
+        secondList: [
+            {
+                listHeading: string
+                key: string
+            },
+            {
+                itemName: string
+                key: string
+            }[]
+        ]
+        thirdList: [
+            {
+                listHeading: string
+                key: string
+            },
+            {
+                itemName: string
+                key: string
+            }[]
+        ]
     }[]
 }
 
@@ -30,55 +56,193 @@ export const menuData: MenuDataProps[] = [
             {
                 subCategoryName: 'Clothing',
                 key: 'clothing',
-                items: [
+                firstList: [
                     {
-                        itemName: 'T-shirts & Vests',
-                        key: 't-shirts-vests',
+                        listHeading: 'shop by product',
+                        key: 'shop-by-product',
                     },
+                    [
+                        {
+                            itemName: 'T-shirts & Vests',
+                            key: 't-shirts-vests',
+                        },
+                        {
+                            itemName: 'Shirts',
+                            key: 'shirts',
+                        },
+                        {
+                            itemName: 'Shorts',
+                            key: 'shorts',
+                        },
+                    ],
+                ],
+                secondList: [
                     {
-                        itemName: 'Shirts',
-                        key: 'shirts',
+                        listHeading: 'brand favourites',
+                        key: 'brand-favourites',
                     },
+                    [
+                        {
+                            itemName: 'Bershka',
+                            key: 'bershka',
+                        },
+                        {
+                            itemName: 'Carhartt WIP',
+                            key: 'carhartt-wip',
+                        },
+                        {
+                            itemName: 'COLLUSION',
+                            key: 'collusion',
+                        },
+                    ],
+                ],
+                thirdList: [
                     {
-                        itemName: 'Shorts',
-                        key: 'shorts',
+                        listHeading: 'shop by edit',
+                        key: 'shop-by-edit',
                     },
+                    [
+                        {
+                            itemName: 'Holiday',
+                            key: 'holiday',
+                        },
+                        {
+                            itemName: 'ASOS Basics',
+                            key: 'asos-basics',
+                        },
+                        {
+                            itemName: 'Festival',
+                            key: 'festival',
+                        },
+                    ],
                 ],
             },
             {
                 subCategoryName: 'Shoes',
                 key: 'shoes',
-                items: [
+                firstList: [
                     {
-                        itemName: 'View All',
-                        key: 'view-all',
+                        listHeading: 'shop by product',
+                        key: 'shop-by-product',
                     },
+                    [
+                        {
+                            itemName: 'View All',
+                            key: 'view-all',
+                        },
+                        {
+                            itemName: 'Trainers',
+                            key: 'trainers',
+                        },
+                        {
+                            itemName: 'Boots',
+                            key: 'boots',
+                        },
+                    ],
+                ],
+                secondList: [
                     {
-                        itemName: 'Trainers',
-                        key: 'trainers',
+                        listHeading: 'shop by brand',
+                        key: 'shop by brand',
                     },
+                    [
+                        {
+                            itemName: 'ASOS DESIGN',
+                            key: 'asos-design',
+                        },
+                        {
+                            itemName: 'New Balance',
+                            key: 'new-balance',
+                        },
+                        {
+                            itemName: 'Nike',
+                            key: 'nike',
+                        },
+                    ],
+                ],
+                thirdList: [
                     {
-                        itemName: 'Boots',
-                        key: 'boots',
+                        listHeading: 'shop by trainer style',
+                        key: 'shop by trainer style',
                     },
+                    [
+                        {
+                            itemName: 'adidas Stan Smith',
+                            key: 'adidas-stan-smith',
+                        },
+                        {
+                            itemName: 'Nike Air Max',
+                            key: 'nike-air-max',
+                        },
+                        {
+                            itemName: 'New Balance 574',
+                            key: 'new-balance-574',
+                        },
+                    ],
                 ],
             },
             {
                 subCategoryName: 'Accessories',
                 key: 'accessories',
-                items: [
+                firstList: [
                     {
-                        itemName: 'View All',
-                        key: 'view-all',
+                        listHeading: 'shop by product',
+                        key: 'shop-by-product',
                     },
+                    [
+                        {
+                            itemName: 'View All',
+                            key: 'view-all',
+                        },
+                        {
+                            itemName: 'Beanies',
+                            key: 'beanies',
+                        },
+                        {
+                            itemName: 'Caps & Hats',
+                            key: 'caps-and-hats',
+                        },
+                    ],
+                ],
+                secondList: [
                     {
-                        itemName: 'Beanies',
-                        key: 'beanies',
+                        listHeading: 'shop by jewellery',
+                        key: 'shop-by-jewellery',
                     },
+                    [
+                        {
+                            itemName: 'View All',
+                            key: 'view-all',
+                        },
+                        {
+                            itemName: 'Necklaces',
+                            key: 'necklaces',
+                        },
+                        {
+                            itemName: 'Rings',
+                            key: 'rings',
+                        },
+                    ],
+                ],
+                thirdList: [
                     {
-                        itemName: 'Caps & Hats',
-                        key: 'caps-hats',
+                        listHeading: 'shop by bag',
+                        key: 'shop by bag',
                     },
+                    [
+                        {
+                            itemName: 'View All',
+                            key: 'view-all',
+                        },
+                        {
+                            itemName: 'Duffle Bags',
+                            key: 'duffle-bags',
+                        },
+                        {
+                            itemName: 'Bum Bags',
+                            key: 'bum-bags',
+                        },
+                    ],
                 ],
             },
         ],
